@@ -1,5 +1,3 @@
-//Help from Alia Delmohammed
-
 <?php
 $host = 'localhost';
 $username = 'lab5_user';

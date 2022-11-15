@@ -8,7 +8,7 @@ window.onload = function(){
         console.log("click");
         var qry = document.getElementById("country").value;
         var rqst = new XMLHttpRequest();
-        var url = "http://localhost/info2180-lab5/world.php" + qry;
+        var url = "http://localhost/info2180-lab5/world.php?country=" + qry;
 
         rqst.onreadystatechange = function(){
             if(rqst.readyState == XMLHttpRequest.DONE){
@@ -32,7 +32,7 @@ window.onload = function(){
         console.log("click");
         var qry = document.getElementById("country").value;
         var rqst = new XMLHttpRequest();
-        var url = "http://localhost/info2180-lab5/world.php" + qry + "&context=cities";
+        var url = "http://localhost/info2180-lab5/world.php?country=" + qry + "&context=cities";
 
         rqst.onreadystatechange = function(){
             if(rqst.readyState == XMLHttpRequest.DONE){
